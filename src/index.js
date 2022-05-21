@@ -10,6 +10,7 @@ import colorReducer from "./features/color";
 
 // Configure store using custom redures
 let store = configureStore({
+  // Reducer Object => key : value
   reducer: { user: userReducer, color: colorReducer },
 });
 
