@@ -3,9 +3,12 @@ import { useDispatch } from "react-redux";
 import { login } from "../features/user";
 
 function Login() {
+  // Using dispatch feature from redux
   const dispatch = useDispatch();
+  // JSX
   return (
     <div>
+      {/* Dispatching login method */}
       <button
         onClick={() =>
           dispatch(

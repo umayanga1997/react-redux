@@ -8,21 +8,15 @@ import { Provider } from "react-redux";
 import userReducer from "./features/user";
 import colorReducer from "./features/color";
 
+// Configure store using custom redures
 let store = configureStore({
   reducer: { user: userReducer, color: colorReducer },
 });
 
-// Store -> Globaized state
-
-// Action -> Like increment
-
-// Reducer ->
-
-// Dispatch
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    {/* Provide store to the app */}
     <Provider store={store}>
       <App />
     </Provider>

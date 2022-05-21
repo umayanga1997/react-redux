@@ -2,12 +2,15 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { changeColor } from "../features/color";
 
+// Functional Component
 function ColorCompo() {
+  // Hooks
   const [color, setColor] = useState("");
+  // Using dispatch feature from redux
   const colorDispatch = useDispatch();
+  // JSX
   return (
     <div>
-      <h1>{color}</h1>
       <input
         type="text"
         name="color"
@@ -15,6 +18,7 @@ function ColorCompo() {
         id=""
         onChange={(event) => setColor(event.target.value)}
       />
+      {/* Dispatching colorChange method */}
       <button onClick={() => colorDispatch(changeColor(color))}>
         Change Color
       </button>
