@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { logout } from "../features/user";
+import { logout } from "../state/user";
 
 function Profile() {
   // Calling useSelector feature from redux to identify declired states

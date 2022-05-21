@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { changeColor } from "../features/color";
+import { changeColor } from "../state/color";
 
 // Functional Component
 function ColorCompo() {

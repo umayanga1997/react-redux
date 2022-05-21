@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { login } from "../features/user";
+import { login } from "../state/user";
 
 function Login() {
   // Using dispatch feature from redux

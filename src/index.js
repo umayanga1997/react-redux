@@ -5,8 +5,8 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
-import userReducer from "./features/user";
-import colorReducer from "./features/color";
+import userReducer from "./state/user";
+import colorReducer from "./state/color";
 
 // Configure store using custom redures
 let store = configureStore({
